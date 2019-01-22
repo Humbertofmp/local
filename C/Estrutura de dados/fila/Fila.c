@@ -114,22 +114,3 @@ f->inicio= ((f->inicio + 1)%N);
 f->n --;
 return aux;
 }
-
-void imprime(Fila*f ){
-int i, aux;
-
-    if(f->n==0)
-    {printf("Fila vazia\n");}
-
-    else
-        {
-        aux=f->inicio;
-
-        for(i=0; i<f->n; i++)
-            {
-
-            printf("%d, ", f->vet[aux]);
-            aux=((aux+1)%N);
-            }
-        }
-}
